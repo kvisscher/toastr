@@ -1,0 +1,5 @@
+name: toastr
+version: 0.1.0
+description: Port of toastr to Dart.
+dependencies:
+  test: any
