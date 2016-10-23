@@ -1,5 +1,7 @@
 name: toastr
 version: 0.1.0
 description: Port of toastr to Dart.
+author: Kevin Visscher <kevin@clickseeker.nl>
+homepage: https://github.com/kvisscher/toastr
 dependencies:
-  test: any
+  test: ">=0.12.15 <0.13.0"
