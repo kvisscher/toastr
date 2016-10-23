@@ -50,6 +50,25 @@ void main() {
   });
 
   group('Multiple toast tests', () {
+    test('Should be assigned correct classes', () async {
+      Map<ToastrType, String> typeToClass = {
+        ToastrType.Success: 'toastr-success',
+        ToastrType.Error: 'toastr-error',
+        ToastrType.Info: 'toastr-info',
+        ToastrType.Warning: 'toastr-warning',
+      };
+
+      typeToClass.forEach((type, expectedClass) async {
+        final toastr = new Toastr(type, expectedClass, expectedClass, duration: shortDuration);
+
+        expect(toastr.element.classes, contains(expectedClass));
+
+        await toastr.onRemoved.first;
+      });
+
+
+    });
+
     test('Should show multiple toasts', () async {
       List<Toastr> toasts = [
         new Toastr.success(title: 'toast 1', duration: shortDuration),
