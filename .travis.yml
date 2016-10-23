@@ -2,4 +2,5 @@ language: dart
 dart:
         - stable
 with_content_shell: true
-
+before_script:
+        - bundle exec dartanalyzer lib
