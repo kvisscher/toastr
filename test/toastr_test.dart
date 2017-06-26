@@ -52,10 +52,10 @@ void main() {
   group('Multiple toast tests', () {
     test('Should be assigned correct classes', () async {
       Map<ToastrType, String> typeToClass = {
-        ToastrType.Success: 'toastr-success',
-        ToastrType.Error: 'toastr-error',
-        ToastrType.Info: 'toastr-info',
-        ToastrType.Warning: 'toastr-warning',
+        ToastrType.Success: 'toast-success',
+        ToastrType.Error: 'toast-error',
+        ToastrType.Info: 'toast-info',
+        ToastrType.Warning: 'toast-warning',
       };
 
       typeToClass.forEach((type, expectedClass) async {
