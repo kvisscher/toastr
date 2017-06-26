@@ -71,16 +71,16 @@ class Toastr {
   String _computeClass(ToastrType type) {
     switch (type) {
       case ToastrType.Success:
-        return 'toastr-success';
+        return 'toast-success';
 
       case ToastrType.Error:
-        return 'toastr-error';
+        return 'toast-error';
 
       case ToastrType.Warning:
-        return 'toastr-warning';
+        return 'toast-warning';
 
       case ToastrType.Info:
-        return 'toastr-info';
+        return 'toast-info';
     }
 
     throw new UnsupportedError('Unknown toast type $type');
