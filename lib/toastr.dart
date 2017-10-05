@@ -32,7 +32,7 @@ class Toastr {
     if (message?.isNotEmpty ?? false) {
       final messageElement = new DivElement()
         ..className = 'toast-message'
-        ..text = title;
+        ..text = message;
 
       _toastElement.children.add(messageElement);
     }
